@@ -22,7 +22,6 @@ public class Calculator {
     public double subtract(double a, double b) {
         return a - b;
     }
-
     /**
      * Multiplies two numbers
      * @param a first number
@@ -45,6 +44,11 @@ public class Calculator {
             throw new IllegalArgumentException("Division by zero not allowed");
         }
         return a / b;
+    }
+
+
+    public boolean isEven(int number) {
+        return number % 2 == 0;
     }
 }
 
